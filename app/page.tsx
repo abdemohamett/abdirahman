@@ -11,16 +11,13 @@ import {
   ChevronDown, 
   ChevronUp, 
   Globe, 
-  Github, 
   Linkedin, 
-  Youtube, 
   Instagram, 
   Twitter,
   ExternalLink,
   Code,
   Sparkles,
   Zap,
-  Target,
   Moon,
   Sun,
   Menu,
@@ -357,7 +354,7 @@ const projects = [
   ];
 
 // Project Card Component
-function ProjectCard({ project, index }: { project: any, index: number }) {
+function ProjectCard({ project }: { project: { name: string; description: string; shortDescription: string; link: string; image: string; year: string; gradient: string } }) {
   const [isExpanded, setIsExpanded] = useState(false);
   
   return (
@@ -509,7 +506,7 @@ export default function MinimalistPortfolio() {
             </div>
               
               <p className="text-xl text-muted-foreground leading-relaxed font-light fade-in-up-delay-2">
-              i'm a 20 y/o self-taught aspiring entrepreneur, software engineer from somalia 🇸🇴
+              i&apos;m a 20 y/o self-taught aspiring entrepreneur, software engineer from somalia 🇸🇴
             </p>
             
               <div className="space-y-3 fade-in-up-delay-3">
@@ -591,7 +588,7 @@ export default function MinimalistPortfolio() {
           
           <div className="space-y-6">
             {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
+              <ProjectCard key={index} project={project} />
             ))}
           </div>
         </section>
@@ -602,8 +599,8 @@ export default function MinimalistPortfolio() {
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-foreground font-monk">let's work together</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                i'm always interested in new opportunities and collaborations. 
-                let's build something amazing together.
+                i&apos;m always interested in new opportunities and collaborations. 
+                let&apos;s build something amazing together.
               </p>
           </div>
           
