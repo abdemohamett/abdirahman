@@ -597,7 +597,7 @@ export default function MinimalistPortfolio() {
         <section id="contact" className="mb-32">
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-foreground font-monk">let's work together</h2>
+              <h2 className="text-4xl font-bold text-foreground font-monk">let&apos;s work together</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 i&apos;m always interested in new opportunities and collaborations. 
                 let&apos;s build something amazing together.
